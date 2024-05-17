@@ -1,4 +1,6 @@
-<?php $dischi = array (
+<?php
+
+$dischi = array (
   0 => 
   array (
     'titolo' => 'Thriller',
@@ -9,7 +11,7 @@
   array (
     'titolo' => 'Back in Black',
     'artista' => 'AC/DC',
-    'anno' => 1980,
+    'anno' => '1980',
   ),
   2 => 
   array (
@@ -21,7 +23,7 @@
   array (
     'titolo' => 'Nessun Perdono',
     'artista' => 'Vasco Rossi',
-    'anno' => 1998,
+    'anno' => '2000',
   ),
   4 => 
   array (

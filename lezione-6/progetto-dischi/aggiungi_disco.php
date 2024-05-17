@@ -3,6 +3,7 @@
 
 
 if($_SERVER["REQUEST_METHOD"] == "POST") {
+    //aggiungete il controllo isset
     if (!empty($_POST['titolo']) && !empty($_POST['artista']) && !empty($_POST['anno'])) {
         $titolo = $_POST['titolo'];         
         $artista = $_POST['artista'];         
