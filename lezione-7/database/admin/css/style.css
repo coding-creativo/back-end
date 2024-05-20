@@ -1,0 +1,13 @@
+th, td {
+    border: 1px solid grey;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: lightcyan;
+}
+
+tr:nth-child(even) {
+    background: #d9c2c2;
+}
