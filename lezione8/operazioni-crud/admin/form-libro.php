@@ -1,5 +1,7 @@
 <?php
 include 'config.php';
+
+
 ?>
 
 <!DOCTYPE html>
@@ -74,9 +76,9 @@ include 'config.php';
             $result_categorie = $conn->query($query_categorie);
             if ($result_categorie->num_rows > 0) {
                 while ($row_categoria = $result_categorie->fetch_assoc()) { ?>
-                <input type="checkbox" id="categoria_<?php echo $row_categoria['id']; ?>" value="<?php echo $row_categoria['id']; ?>">
+                <!-- è importante aggiungere  name="categorie[]" -->
+                <input type="checkbox" id="categoria_<?php echo $row_categoria['id']; ?>" value="<?php echo $row_categoria['id']; ?>" name="categorie[]">
                 <label for="categoria_<?php echo $row_categoria['id']; ?>"><?php echo $row_categoria['nome']; ?></label>
-
             <?php }
             }
             ?>
